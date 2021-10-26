@@ -18,8 +18,12 @@ Business Rules
 
 ### 2. Conceptual Model in UML
 ![](https://github.ccs.neu.edu/marilynliu/CS5200DatabaseManagement/blob/main/Project1/Pictures/Q3.UML.png?raw=true)
+
+Link to lucidchart: https://lucid.app/lucidchart/47f13deb-0c7c-49cc-9430-6288f6ab24e9/edit?invitationId=inv_6602d40b-2285-42b7-b5b8-753d12cb2c87&page=sAIlboIWdedJ#
 ### 3. Logical Model in ERD
 ![](https://github.ccs.neu.edu/marilynliu/CS5200DatabaseManagement/blob/main/Project1/Pictures/Q2.ERD.png?raw=true)
+
+Link to lucidchart: https://lucid.app/lucidchart/47f13deb-0c7c-49cc-9430-6288f6ab24e9/edit?invitationId=inv_6602d40b-2285-42b7-b5b8-753d12cb2c87&page=RkZlGXn.R~cp#
 ### 4. Relational Schema
 - Teams{teamID, country, noc}
 - Attendance{teamID, gameID, athleteID}
