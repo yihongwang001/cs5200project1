@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS "Attendance" (
     "teamID"    Integer,
     "gameID"    Integer,
     "athleteID" Integer,
+    CONSTRAINT "FK_Attendance.teamID" FOREIGN KEY("teamID") REFERENCES "Teams"("teamID"),
     CONSTRAINT "FK_Attendance.athleteID" FOREIGN KEY("athleteID") REFERENCES "Athletes"("athleteID"),
     CONSTRAINT "FK_Attendance.gameID" FOREIGN KEY("gameID") REFERENCES "Teams"("gameID"),
     PRIMARY KEY("teamID","gameID","athleteID")
