@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS "Events" (
     "eventID"   Integer,
     "eventType" Text NOT NULL,
     "sportID"   Integer,
-    CONSTRAINT "FK_Events.sportID" FOREIGN KEY("sportID") REFERENCES "Sports"("sportID"),
+    CONSTRAINT "FK_Events.sportID" FOREIGN KEY("sportID") REFERENCES "Sports"("sportID") ON DELETE CASCADE,
     PRIMARY KEY("eventID")
 );
 CREATE TABLE IF NOT EXISTS "Participations" (
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS "Participations" (
     "gameID"    Integer,
     "medal" TEXT CHECK("medal" IN ("Gold", "Bronze", "Silver")),
     "athleteID" Integer,
-    CONSTRAINT "FK_Participations.athleteID" FOREIGN KEY("athleteID") REFERENCES "Athletes"("athleteID"),
+    CONSTRAINT "FK_Participations.athleteID" FOREIGN KEY("athleteID") REFERENCES "Athletes"("athleteID") ON DELETE CASCADE,
     CONSTRAINT "FK_Participations.gameID" FOREIGN KEY("gameID") REFERENCES "Games"("gameID"),
     CONSTRAINT "FK_Participations.eventID" FOREIGN KEY("eventID") REFERENCES "Events"("eventID"),
     PRIMARY KEY("eventID","gameID","athleteID")
@@ -99,8 +99,8 @@ CREATE TABLE IF NOT EXISTS "Attendance" (
     "gameID"    Integer,
     "athleteID" Integer,
     CONSTRAINT "FK_Attendance.teamID" FOREIGN KEY("teamID") REFERENCES "Teams"("teamID"),
-    CONSTRAINT "FK_Attendance.athleteID" FOREIGN KEY("athleteID") REFERENCES "Athletes"("athleteID"),
-    CONSTRAINT "FK_Attendance.gameID" FOREIGN KEY("gameID") REFERENCES "Teams"("gameID"),
+    CONSTRAINT "FK_Attendance.athleteID" FOREIGN KEY("athleteID") REFERENCES "Athletes"("athleteID") ON DELETE CASCADE,
+    CONSTRAINT "FK_Attendance.gameID" FOREIGN KEY("gameID") REFERENCES "Games"("gameID"),
     PRIMARY KEY("teamID","gameID","athleteID")
 );
 
