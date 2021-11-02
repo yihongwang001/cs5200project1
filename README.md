@@ -3,7 +3,53 @@
 ## Contributors
 
 - Orkhan Dadashov
+    - designing the functions which we will use and also helped me to test and add + update sql qury for our node project
+    - Creating Pages : Athlete, Event Sport and main page (Olympic Games)
+    - All Search bars in all pages with complex several joins : main, event, sport and athlete page,their view, and all functions and query and connection to the main page
+    - Delete the athlete view, and all functions and query and connection to the main page
+    - Update the athlete view, and all functions and query and connection to the main page
+    - Sport Gender statistics page, view, query and all connecting parts
+    - testing & verifying all the functionalities
+
+
+
 - Meilin Liu
+    - creation of new athlete, it`s view, and all functions and query and connection to the main page, 
+    - testing final product of the project, designing the functions which we will use and also helped me to test and add + update 
+    - sql query for our node project Delete the athlete, view and all connection parts 
+    - sql query for Update the athlete, view and all connection parts 
+hr/>
+
+## Project Original Proposal
+
+Our plan is to make an application about data for Olympic athletes during past 120 years. The application will support:
+
+Reporting athlete body info
+Searching athlete by countries
+CRUD athlete info
+Yearly statistics
+Age statics
+
+## Project Updated Proposal
+
+Our plan is to make an application about data for Olympic athletes during past 120 years. The application will support:
+
+Search game by country
+Athlete:
+    Search by athlete name
+    Create a new athlete
+    Delete an athlete
+    Update an athlete information
+    the games athlete participated in edit page
+Sports:
+    Search by sport type
+    Also includes Gender count per sport type
+Events:
+    Search by event type
+    Search by sport type
+
+
+<hr/>
 
 
 <hr/>
@@ -150,6 +196,10 @@ Searching Sport By Name
 
 Searching Sport By Name Result
 ![Searching Sport By Name Result](./images/part2/Search_Result_By_Sport_Name.png)
+
+
+Show sports gender statistics Result
+![Show sports gender statistics Result](./images/part2/Gender_count_by_sport.png)
 
 #### Events page
 
