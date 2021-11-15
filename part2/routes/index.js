@@ -216,6 +216,7 @@ router.get("/athletes/:athleteID/delete", async (req, res, next) => {
   }
 });
 
+// I really like the design to add delete alert and it's helpful for users to check if deleted or not
 
 
 
